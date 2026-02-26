@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubdeep Mohapatra</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-name">Shubdeep Mohapatra</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- News Banner -->
+  <div class="news-banner">
+    <div class="container">
+      <span class="news-badge">New</span>
+      <span class="news-text">
+        <strong>HyQSim v1.0</strong> is now online &mdash; a visual simulator for hybrid CV-DV quantum circuits.
+        <a href="https://cvdv.ncsu.edu/resources/simulator/" target="_blank">Try it out</a>
+      </span>
+      <button class="news-close" aria-label="Dismiss">&times;</button>
+    </div>
+  </div>
+
+  <!-- Hero / About -->
+  <section id="about" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Shubdeep Mohapatra</h1>
+          <p class="subtitle">PhD Candidate, Computer Engineering</p>
+          <p class="affiliation">North Carolina State University</p>
+          <p class="bio">
+            I am a third-year PhD candidate in Computer Engineering at North Carolina State University,
+            advised by <a href="https://hzhou.wordpress.ncsu.edu/" target="_blank">Dr. Huiyang Zhou</a>
+            and Dr. Yuan Liu.
+            My research is focused around error analysis and mitigation in quantum circuits and the
+            relatively new quantum computing architecture involving Hybrid Continuous Variable&ndash;Discrete
+            Variable (CV-DV) systems. Specifically, I aim to find the vulnerable regions in a quantum
+            circuit when it is subjected to rotation errors, helping pinpoint the locations most susceptible
+            to errors and selectively protect them. My most recent work in this area aims to find the best
+            circuit reliability metric to quantify the error experienced by a circuit&mdash;important because
+            many error mitigation schemes that use extrapolation to the zero-noise case require an accurate
+            quantification of circuit error.
+          </p>
+          <p class="bio">
+            Hybrid CV-DV quantum computing combines traditional discrete-variable qubits with
+            continuous-variable bosonic modes (qumodes), leveraging the infinite-dimensional Hilbert
+            space of quantum harmonic oscillators to achieve significant resource advantages for
+            tasks like quantum simulation and error correction.
+            On this front, I have developed
+            <a href="https://github.com/shubdeepmohapatra01/HyQBench" target="_blank">HyQBench</a>,
+            an open-source benchmarking suite for Hybrid CV-DV quantum circuits built on Bosonic Qiskit.
+            I am currently working on noise modeling for these hybrid systems, studying how errors such as
+            photon loss and dephasing affect CV-DV applications. I have also recently released
+            <a href="https://cvdv.ncsu.edu/resources/simulator/" target="_blank">HyQSim</a>,
+            a browser-based visual simulator for hybrid CV-DV circuits that allows researchers to
+            build, simulate, and visualize these systems interactively.
+          </p>
+          <p class="bio">
+            Prior to my PhD, I completed my undergraduate degree with a dual major in Physics and Computer
+            Science at Birla Institute of Technology and Sciences (BITS) Pilani.
+          </p>
+          <div class="hero-links">
+            <a href="Shubdeep_CV_2026.pdf" target="_blank" class="btn btn-primary">Download CV</a>
+            <a href="mailto:shubdeepmohapatra01@gmail.com" class="btn">Email</a>
+            <a href="https://www.linkedin.com/in/shubdeep-mohapatra/" target="_blank" class="btn">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AElLoL2bFoqRuMRbqgoDe5RpHtV2_2Tks2DjVCu-OhuuBnczrwauwlxosBDI7w0tEJF7ZrMcNL0f6G0cVzRPiD7nHWR7Ut4LCPXxaE1BXQo&user=i-ov9HAAAAAJ" target="_blank" class="btn">Google Scholar</a>
+            <a href="https://github.com/shubdeepmohapatra01" target="_blank" class="btn">GitHub</a>
+          </div>
+        </div>
+        <div class="hero-sidebar">
+          <div class="hero-photo">
+            <div class="photo-placeholder">
+              <img src="photo_profile.jpeg" alt="Shubdeep Mohapatra">
+            </div>
+          </div>
+          <div id="news" class="sidebar-news">
+            <h3>News</h3>
+            <ul class="news-list">
+              <li>
+                <span class="news-date">Feb 2026</span>
+                <span class="news-item"><a href="https://cvdv.ncsu.edu/resources/simulator/" target="_blank">HyQSim v1.0</a> released &mdash; browser-based simulator for hybrid CV-DV circuits.</span>
+              </li>
+              <li>
+                <span class="news-date">Jul 2025</span>
+                <span class="news-item">Paper accepted at <strong>IEEE QCE 2025</strong>: <em>Benchmarking Fidelity Metrics of Quantum Computers</em>.</span>
+              </li>
+              <li>
+                <span class="news-date">Sep 2024</span>
+                <span class="news-item">Paper accepted at <strong>IEEE QCE 2024</strong>: <em>Understanding Error Sensitivity of Quantum Circuits</em>.</span>
+              </li>
+              <li>
+                <span class="news-date">Aug 2023</span>
+                <span class="news-item">Started PhD at North Carolina State University.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section id="research">
+    <div class="container">
+      <h2>Research</h2>
+      <div class="research-grid">
+        <div class="research-card">
+          <div class="research-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          </div>
+          <h3>Quantum Error Analysis</h3>
+          <p>
+            Investigating error patterns in quantum circuits, with a focus on identifying
+            vulnerable zones susceptible to rotation errors. This work informs targeted error
+            mitigation strategies by systematically testing circuits under realistic noise models.
+            In our recent work, <em>Benchmarking Fidelity Metrics of Quantum Computers</em>,
+            we evaluate how different fidelity measurement approaches correlate with Density Matrix
+            Fidelity across various quantum hardware platforms and apply these findings to improve
+            extrapolation-based error mitigation schemes.
+          </p>
+          <a href="https://github.com/shubdeepmohapatra01/BenchmarkingFidelityMetrics" target="_blank" class="research-link">View on GitHub &rarr;</a>
+        </div>
+        <div class="research-card">
+          <div class="research-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Hybrid CV-DV Systems</h3>
+          <p>
+            Studying hybrid Continuous Variable&ndash;Discrete Variable quantum computing architectures.
+            This hybrid approach drastically cuts overhead for tasks like Shor's algorithm and
+            simulation of physical systems containing mixed bosonic and fermionic components.
+            We built <strong>HyQSim</strong>, a browser-based visual simulator for hybrid CV-DV circuits
+            featuring drag-and-drop circuit construction, real-time Wigner function and Bloch sphere
+            visualization, and dual backends (in-browser JS and Python/bosonic-qiskit).
+          </p>
+          <a href="https://cvdv.ncsu.edu/resources/simulator/" target="_blank" class="research-link">Try HyQSim &rarr;</a>
+        </div>
+        <div class="research-card">
+          <div class="research-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 4-10"/></svg>
+          </div>
+          <h3>Benchmarking Suite Development</h3>
+          <p>
+            Building HyQBench, an open-source benchmarking suite for hybrid CV-DV quantum circuits.
+            It spans eight benchmarks&mdash;from primitives like state transfer and cat state generation
+            to applications like Hamiltonian simulation and Shor's algorithm&mdash;with CV-DV&ndash;specific
+            metrics including Wigner negativity, truncation cost, and energy.
+          </p>
+          <a href="https://github.com/shubdeepmohapatra01/HyQBench" target="_blank" class="research-link">View on GitHub &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications">
+    <div class="container">
+      <h2>Publications</h2>
+      <ol class="publication-list">
+        <li class="publication-item">
+          <div class="pub-year">2025</div>
+          <div class="pub-details">
+            <h3>Benchmarking Fidelity Metrics of Quantum Computers</h3>
+            <p class="pub-authors"><strong>Shubdeep Mohapatra</strong>, Hrushikesh Pramod Patil, Ji Liu, Huiyang Zhou</p>
+            <p class="pub-venue">IEEE International Conference on Quantum Computing and Engineering (QCE), 2025</p>
+            <div class="pub-links">
+              <a href="https://hzhou.wordpress.ncsu.edu/files/2025/07/Fidelity_Metrics.pdf" target="_blank">[PDF]</a>
+            </div>
+          </div>
+        </li>
+        <li class="publication-item">
+          <div class="pub-year">2024</div>
+          <div class="pub-details">
+            <h3>Understanding Error Sensitivity of Quantum Circuits</h3>
+            <p class="pub-authors"><strong>Shubdeep Mohapatra</strong>, Huiyang Zhou</p>
+            <p class="pub-venue">IEEE International Conference on Quantum Computing and Engineering (QCE), 2024</p>
+            <div class="pub-links">
+              <a href="https://hzhou.wordpress.ncsu.edu/files/2024/07/ErrorSen.pdf" target="_blank">[PDF]</a>
+            </div>
+          </div>
+        </li>
+        <li class="publication-item">
+          <div class="pub-year">2023</div>
+          <div class="pub-details">
+            <h3>Drishyam: An Image is Worth a Data Prefetcher</h3>
+            <p class="pub-authors"><strong>Shubdeep Mohapatra</strong>, Biswabandan Panda</p>
+            <p class="pub-venue">International Conference on Parallel Architectures and Compilation Techniques (PACT), 2023</p>
+            <div class="pub-links">
+              <a href="https://www.cse.iitb.ac.in/~biswa/PACT23.pdf" target="_blank">[PDF]</a>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">Summer 2024 &ndash; Present</div>
+          <div class="timeline-content">
+            <h3>Graduate Research Assistant</h3>
+            <p class="timeline-org">North Carolina State University</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Fall 2023 &ndash; Spring 2024</div>
+          <div class="timeline-content">
+            <h3>Graduate Teaching Assistant</h3>
+            <p class="timeline-org">North Carolina State University</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Jan 2023 &ndash; Jun 2023</div>
+          <div class="timeline-content">
+            <h3>Fraud Analysis Intern</h3>
+            <p class="timeline-org">Gameskraft Technologies, Bangalore</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Jun 2022 &ndash; Jan 2023</div>
+          <div class="timeline-content">
+            <h3>Research Intern</h3>
+            <p class="timeline-org">IIT Bombay &mdash; Advisor: Dr. Biswabandan Panda</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Summer 2021</div>
+          <div class="timeline-content">
+            <h3>Summer Research Intern</h3>
+            <p class="timeline-org">IIT Madras &mdash; Advisors: Dr. Arockiarajan, Dr. Aghna Mukherjee, Dr. Sudersan Sridhar</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Summer 2020</div>
+          <div class="timeline-content">
+            <h3>Summer Intern</h3>
+            <p class="timeline-org">Bhaskaracharya Institute of Space Application and Geoinformatics (BISAG) &mdash; Advisor: Dr. Indra Prakash</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2021 &ndash; 2022</div>
+          <div class="timeline-content">
+            <h3>Teaching Assistant</h3>
+            <p class="timeline-org">BITS Pilani, Goa &mdash; VLSI Architecture (Dr. Amalin Prince) &amp; Solid State Physics (Dr. Teny Theresa John)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="education-grid">
+        <div class="education-card">
+          <div class="edu-degree">Ph.D. in Computer Engineering</div>
+          <div class="edu-school">North Carolina State University, Raleigh, USA</div>
+          <div class="edu-date">2023 &ndash; Present</div>
+          <div class="edu-gpa">GPA: 3.48 / 4.0</div>
+        </div>
+        <div class="education-card">
+          <div class="edu-degree">M.Sc. Physics &amp; B.E. Computer Science</div>
+          <div class="edu-school">BITS Pilani, India</div>
+          <div class="edu-date">2018 &ndash; 2023</div>
+          <div class="edu-gpa">CGPA: 8.66 / 10</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects (compact) -->
+  <section id="projects">
+    <div class="container">
+      <h2>Undergraduate Projects</h2>
+      <p class="projects-summary">
+        A selection of projects from my undergraduate studies spanning optimization, AI, machine learning, and computational neuroscience.
+      </p>
+      <ul class="projects-compact">
+        <li>Topology Optimization of Compliant Structural Elements Using Genetic Algorithm</li>
+        <li>Using Genetic Algorithm for Satisfying 3CNF Sentences</li>
+        <li>Identification and Mapping of Landslides in Uttarakhand</li>
+        <li>Firing Coherence and Disruption of a Network of Neurons</li>
+        <li>Connect-4 Game Using Monte Carlo Tree Search and Reinforcement Learning</li>
+      </ul>
+      <a href="projects.html" class="btn projects-btn">View All Projects &rarr;</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <h2>Service</h2>
+      <ul class="service-list">
+        <li>
+          <strong>Reviewer</strong> &mdash; IEEE International Conference on Quantum Computing and Engineering (QCE), 2025
+        </li>
+        <li>
+          <strong>Active Participant</strong> &mdash; NC State Hybrid CV-DV Reading Group
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <h3>Email</h3>
+          <a href="mailto:shubdeepmohapatra01@gmail.com">shubdeepmohapatra01@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/shubdeep-mohapatra/" target="_blank">linkedin.com/in/shubdeep-mohapatra</a>
+        </div>
+        <div class="contact-item">
+          <h3>GitHub</h3>
+          <a href="https://github.com/shubdeepmohapatra01" target="_blank">github.com/shubdeepmohapatra01</a>
+        </div>
+        <div class="contact-item">
+          <h3>Google Scholar</h3>
+          <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AElLoL2bFoqRuMRbqgoDe5RpHtV2_2Tks2DjVCu-OhuuBnczrwauwlxosBDI7w0tEJF7ZrMcNL0f6G0cVzRPiD7nHWR7Ut4LCPXxaE1BXQo&user=i-ov9HAAAAAJ" target="_blank">Shubdeep Mohapatra</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Shubdeep Mohapatra. Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undergraduate Projects &mdash; Shubdeep Mohapatra</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-name">Shubdeep Mohapatra</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#research">Research</a></li>
+        <li><a href="index.html#publications">Publications</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <a href="index.html" class="back-link">&larr; Back to Home</a>
+      <h1>Undergraduate Projects</h1>
+    </div>
+  </section>
+
+  <!-- Project 1 -->
+  <section class="project-detail">
+    <div class="container">
+      <h2>Topology Optimization of Compliant Structural Elements Using Genetic Algorithm</h2>
+      <div class="project-detail-content">
+        <div class="project-detail-text">
+          <p>The wikipedia definition of topology optimization is "a mathematical method that optimizes material layout within a given design space, for a given set of loads, boundary conditions and constraints with the goal of maximizing the performance of the system".</p>
+          <p>Most of the techniques prevalent today use gradient information for optimization. But this is only possible if we know the compliance function which is not always the case. In these cases, we will have to use heuristic methods for the optimization. We used genetic algorithm to find the optimized structure for a 2D cantilever beam with load attached to the midpoint of its right side edge.</p>
+          <p>This approach also took care of various numerical instabilities like mesh dependency and one node hinges. Mesh dependency was taken care of using perimeter control which required information on number of holes and minimum area of holes. One node hinges were removed by penalising the offspring with a high positive value if they had a hinge so as to prevent selecting that offspring for crossover.</p>
+          <p>We also took advantage of the fact that in this case the loading point was symmetrical and thus restricted our design space to only the bottom half of the beam.</p>
+          <div class="project-links">
+            <a href="https://github.com/uchihashubdeep/TopOpt" target="_blank" class="btn">GitHub</a>
+          </div>
+        </div>
+        <div class="project-detail-images">
+          <img src="images/projects/topology1.png" alt="Stress distribution analysis">
+          <img src="images/projects/topology2.png" alt="Optimized beam design">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project 2 -->
+  <section class="project-detail">
+    <div class="container">
+      <h2>Using Genetic Algorithm for Satisfying 3CNF Sentences</h2>
+      <div class="project-detail-content">
+        <div class="project-detail-text">
+          <p>Boolean Satisfiability (SAT) is a very important problem in computer science. The aim of solving this problem is finding an assignment satisfying the boolean sentence. I aimed to solve the satisfiability problem for a 3 CNF sentence with 50 boolean variables using genetic algorithm. I varied the number of clauses in the sentence and checked the performance of the solver.</p>
+          <p>I checked the performance with different selection, crossover and mutation methods and found that tournament selection and uniform crossover work the best. I also found a region of unsatisfiability when the ratio of number of clauses to the number of variables was approximately 4.</p>
+          <div class="project-links">
+            <a href="https://github.com/uchihashubdeep/SAT_solver" target="_blank" class="btn">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project 3 -->
+  <section class="project-detail">
+    <div class="container">
+      <h2>Identification and Mapping of Landslides in Uttarakhand</h2>
+      <div class="project-detail-content">
+        <div class="project-detail-text">
+          <p>For this project, we had to make a landslide susceptibility map of a region in Uttarakhand state in India. We created the map using a Na&iuml;ve Bayes tree classifier which is a popular machine learning technique. We had to first find out the landslide conditioning factors of the area of interest i.e the most common factors which influence the landslide susceptibility of an area. We used aspect, curvature, depth, rainfall, road distance and slope as our landslide conditioning factors. Then we made the landslide inventory map using google earth which showed the past occurrences of landslides in the area.</p>
+          <p>The Landslide Susceptibility Map (LSM) was created using the ML plugins in Quantum Geo-Information System (QGIS).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project 4 -->
+  <section class="project-detail">
+    <div class="container">
+      <h2>Firing Coherence and Disruption of a Network of Neurons</h2>
+      <p class="project-advisor">Under Dr. Gaurav Dar</p>
+      <div class="project-detail-content">
+        <div class="project-detail-text">
+          <p>Small world networks find their applications in various social media studies, it has also been found that many groups of neurons in the brain are connected to each other through a small world network. In this project we studied the dynamics and robustness of a small world network.</p>
+          <p>First, we found the dynamics of a small world network without removing any synapses. The synchronization of the network was quantified using the cluster index parameter. The evolution of the network activity was simulated to verify the dynamics of a small world network.</p>
+          <p>Secondly, we removed synapses to study the robustness of a small world network. This was done by observing how the firing coherence changed upon the removal of synapses.</p>
+          <div class="project-links">
+            <a href="https://github.com/uchihashubdeep/Neuron-Dynamics" target="_blank" class="btn">GitHub</a>
+            <a href="https://docs.google.com/presentation/d/19TpsvXNJSFfBOajhFIAkty1E9AUcPgFSuIKoaUQ0Su0/edit?usp=sharing" target="_blank" class="btn">Summary</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project 5 -->
+  <section class="project-detail">
+    <div class="container">
+      <h2>Connect-4 Game Using Monte Carlo Tree Search and Reinforcement Learning</h2>
+      <div class="project-detail-content">
+        <div class="project-detail-text">
+          <p>Connect-4 is a popular game, similar to tic-tac-toe, where a player has to match the pieces of the same color in a horizontal, vertical, or diagonal manner. In this project, some popular AI techniques were used to play the Connect-4 game. The efficacy of each method was also looked at.</p>
+          <p>Firstly, Monte Carlo Tree Search (MCTS), a popular tree-based algorithm was used to play the game. Two different MCTS algorithms:- MC200 and MC40 played against each other. MC200 would have 200 nodes in the game tree and MC40 would have 40 nodes. To further ensure that the algorithm picks a move that would ensure a draw in a losing position, I used rewards for different outcomes in the UCB selection instead of the popular idea of using number of wins for the node selection. After applying these new modifications, MC200 lost only 4% of games against MC40.</p>
+          <p>Secondly, I used a popular Reinforcement Learning technique, Q learning, to play against a range of MCTS algorithms. Q learning is a TD0 method, as a result, it updates the value of afterstates after each step in the episode. This update method helps Q learning to get a low variance and is generally preferred over other RL techniques like Constant Alpha Monte Carlo, which updates the values after the end of the episode. Since Q Learning stores the history of various episodes and how feasible a particular afterstate is, it should perform better than MCTS algorithms, since there is a degree of non-determinism in them.</p>
+          <div class="project-links">
+            <a href="https://github.com/uchihashubdeep/Connect-4" target="_blank" class="btn">GitHub</a>
+            <a href="https://drive.google.com/file/d/1J2A5OcZCVbVhtmkczSttj7nh6XFhJ_PX/view?usp=sharing" target="_blank" class="btn">Report</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Shubdeep Mohapatra. Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
